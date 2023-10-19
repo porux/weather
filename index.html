@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+             <h1 class="bg-primary-subtle">Weather app</h1>
+        </div>
+        <div class="row">
+          <input type="text" id="city-input" placeholder="Type a city...">
+          <label for="units-select">Mértékegység:</label>
+          <select id="units-select">
+            <option value="standard">Standard</option>
+            <option value="metric">Métrikus</option>
+            <option value="imperial">Imperiális</option>
+        </select>
+        </div>
+        <br><br><br>
+        <div class="row">
+          <div class="card" style="width: 18rem;">
+            <h5 class="card-title" id="city-name"></h5>
+            <div class="card-body">
+              
+              <p class="card-text" id="celsius-min"></p>
+              <p class="card-text" id="celsius-max"></p>
+              <p class="card-text" id="actual-celsius"></p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="main.js" type="module"></script>
+
+  </body>
+</html>
